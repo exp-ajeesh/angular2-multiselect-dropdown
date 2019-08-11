@@ -13,7 +13,7 @@ MIT
 @angular/router
 MIT
 
-angular2-multiselect-dropdown
+angular2-multiselect-dropdown-select-all
 MIT
 
 highlight.js
