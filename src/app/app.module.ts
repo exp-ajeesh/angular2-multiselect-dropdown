@@ -81,7 +81,7 @@ export function hljsLanguages() {
     ReactiveFormsModule,
     FormsModule,
     AppRouterModule,
-    AngularMultiSelectModule,
+    AngularMultiSelectModuleSelectAll,
     TabViewModule,
     HttpClientModule,
     HighlightModule.forRoot({
