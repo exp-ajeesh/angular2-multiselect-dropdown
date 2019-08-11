@@ -3,13 +3,13 @@
     <div class="col-md-3 mr-auto ml-auto dropdown-container">
     </div>
 <div class="col-md-8 mr-auto ml-auto dropdown-container">
-    <angular2-multiselect [data]="itemList" 
+    <angular2-multiselect-select-all [data]="itemList" 
                           [(ngModel)]="selectedItems" 
                           [settings]="settings" 
                           (onSelect)="onItemSelect($event)"
                           (onDeSelect)="OnItemDeSelect($event)" 
                           (onSelectAll)="onSelectAll($event)" 
-                          (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+                          (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect-select-all>
 <br>
 <span>Total Records : {{itemList.length}}</span>
 </div>

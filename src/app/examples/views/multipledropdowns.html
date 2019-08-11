@@ -2,14 +2,14 @@
 <div class="col-md-8 mr-auto ml-auto dropdown-container">
     <div class="form-group col-md-12">
         <label for="directorySpecialties">Directory Specialties</label>
-        <angular2-multiselect id="directorySpecialties" name="directorySpecialties" [(ngModel)]="providerLocation.directorySpecialties"
+        <angular2-multiselect-select-all id="directorySpecialties" name="directorySpecialties" [(ngModel)]="providerLocation.directorySpecialties"
             [data]="directorySpecialties" [settings]="dropdownSettings">
-        </angular2-multiselect>
+        </angular2-multiselect-select-all>
     </div>
     <div class="form-group col-md-12">
         <label for="useCases">Use Cases</label>
-        <angular2-multiselect id="useCases" name="useCases" [(ngModel)]="providerLocation.useCases" [data]="useCases" [settings]="dropdownSettings2">
-        </angular2-multiselect>
+        <angular2-multiselect-select-all id="useCases" name="useCases" [(ngModel)]="providerLocation.useCases" [data]="useCases" [settings]="dropdownSettings2">
+        </angular2-multiselect-select-all>
     </div>
 </div>
 <h4 class="example-title code-section">Code</h4>

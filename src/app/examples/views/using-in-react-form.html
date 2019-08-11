@@ -5,13 +5,13 @@
         <div class="form-group">
             <label for="name">Skills</label>
             <span style="color: red;float: right;">* required</span>
-           <angular2-multiselect [data]="itemList" [(ngModel)]="selectedItems" 
+           <angular2-multiselect-select-all [data]="itemList" [(ngModel)]="selectedItems" 
                                   [settings]="settings" 
                                   (onSelect)="onItemSelect($event)"
                                   (onDeSelect)="OnItemDeSelect($event)" 
                                   (onSelectAll)="onSelectAll($event)" 
                                   (onDeSelectAll)="onDeSelectAll($event)" formControlName="skills">
-            </angular2-multiselect>
+            </angular2-multiselect-select-all>
         </div>
         <div class="form-group">
             <label for="name">Name</label>

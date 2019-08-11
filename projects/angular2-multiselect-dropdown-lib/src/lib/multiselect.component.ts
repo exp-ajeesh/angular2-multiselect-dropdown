@@ -806,4 +806,4 @@ this.selectedItems = [];
     exports: [AngularMultiSelect, ClickOutsideDirective, ScrollDirective, styleDirective, ListFilterPipe, Item, TemplateRenderer, Badge, Search, setPosition, VirtualScrollComponent, CIcon],
     providers: [DataService]
 })
-export class AngularMultiSelectModule { }
+export class AngularMultiSelectModuleSelectAll { }

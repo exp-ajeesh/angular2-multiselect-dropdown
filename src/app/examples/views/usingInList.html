@@ -17,10 +17,10 @@
                     {{item.name}}
                 </td>
                 <td>
-                    <angular2-multiselect [data]="itemList" [(ngModel)]="item.countries" [settings]="settings"
+                    <angular2-multiselect-select-all [data]="itemList" [(ngModel)]="item.countries" [settings]="settings"
                         (onSelect)="onItemSelect($event)" (onDeSelect)="OnItemDeSelect($event)"
                         (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)">
-                    </angular2-multiselect>
+                    </angular2-multiselect-select-all>
                 </td>
             </tr>
         </tbody>

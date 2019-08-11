@@ -4,14 +4,14 @@
         <div class="col-md-2">
         </div>
         <div class="col-md-8">
-            <angular2-multiselect #dropdownElem [data]="itemList" [(ngModel)]="selectedItems" [settings]="settings" 
+            <angular2-multiselect-select-all #dropdownElem [data]="itemList" [(ngModel)]="selectedItems" [settings]="settings" 
                 (onSelect)="onItemSelect($event)"
                 (onDeSelect)="OnItemDeSelect($event)" 
                 (onSelectAll)="onSelectAll($event)" 
                 (onDeSelectAll)="onDeSelectAll($event)"
                 (onOpen)="onOpen($event)"
                 (onClose)="onClose($event)">
-            </angular2-multiselect>
+            </angular2-multiselect-select-all>
 
         </div>
         <div class="col-md-2"></div>

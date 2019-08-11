@@ -9,8 +9,8 @@
             <button (click)="close($event)" class="btn btn-primary">Close</button>
         </div>
         <div class="col-md-8">
-    <angular2-multiselect #dropdownElem [data]="itemList" [(ngModel)]="selectedItems" [settings]="settings" (onSelect)="onItemSelect($event)"
-        (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+    <angular2-multiselect-select-all #dropdownElem [data]="itemList" [(ngModel)]="selectedItems" [settings]="settings" (onSelect)="onItemSelect($event)"
+        (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect-select-all>
 
         </div>
     </div>
