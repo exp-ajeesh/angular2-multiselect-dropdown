@@ -21,7 +21,7 @@
         </div>
         </span>
         <div class="c-list" *ngIf="selectedItems?.length > 0 && !settings.singleSelection">
-            <div class="c-token" *ngFor="let item of selectedItems;trackBy: trackByFn.bind(this);let k = index" [hidden]="k > settings.badgeShowLimit-1">
+            <!-- <div class="c-token" *ngFor="let item of selectedItems;trackBy: trackByFn.bind(this);let k = index" [hidden]="k > settings.badgeShowLimit-1">
                 <span *ngIf="!badgeTempl" class="c-label">{{item[settings.labelKey]}}</span>
                 <span *ngIf="badgeTempl" class="c-label">
                     <c-templateRenderer [data]="badgeTempl" [item]="item"></c-templateRenderer>
@@ -29,7 +29,10 @@
                 <span class="c-remove" (click)="onItemClick(item,k,$event);$event.stopPropagation()">
                     <c-icon [name]="'remove'"></c-icon>
                 </span>
-            </div>
+            </div> -->
+
+            {{settings.selectAllText}}
+            
         </div>
         <span class="countplaceholder" *ngIf="selectedItems?.length > settings.badgeShowLimit">+{{selectedItems?.length - settings.badgeShowLimit }}</span>
         <span class="c-remove clear-all" *ngIf="selectedItems?.length > 0" (click)="clearSelection($event);$event.stopPropagation()">
